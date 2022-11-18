@@ -1,0 +1,56 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.video {
+    position: relative; 
+
+    .overlay {
+        position: absolute; 
+        height: 99%;
+        width: 100%;
+        background: rgb(108,3,255);
+        background: linear-gradient(270deg, rgba(108,3,255,0.5) 0%, rgba(255,0,108,0.3) 100%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    video { //La etiqueta.  
+        width: auto;
+        max-height: 70rem; 
+        min-height: 40rem; 
+        overflow: hidden; 
+        @include m.tablet {
+            width: 100%;
+            min-height: 20rem;
+        }
+
+    }
+
+    .contenido-video {
+        z-index: 10; 
+        h2 {
+            color: v.$blanco;
+            font-size: 4.2rem;
+            margin: 0;  
+        }
+        p {
+            background-color: v.$rosa; 
+            max-width: 70%;
+            max-height: 6rem;
+            display: inline-block; 
+            justify-content: left;
+            color: v.$blanco;
+            font-weight: 700;
+            font-size: 1.8rem;
+            padding: 2rem;
+            margin: 0 auto;
+
+            @media (max-width: 480px) 
+            {
+                width: 65%;
+            }
+        }
+    }
+}
+

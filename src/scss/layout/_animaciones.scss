@@ -1,0 +1,24 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.reveal{
+    position: relative;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .desplaza{
+    position: relative;
+    transform: translateX(200px);
+    opacity: 0;
+    transition: 2s all ease;
+  }
+  .desplaza.active{
+    transform: translateX(0);
+    opacity: 1;
+  }

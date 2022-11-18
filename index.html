@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock & EDM Festival</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+
+   <header class="header">
+        <div class="contenedor contenido-header">
+            <h1 class>Rock & EDM Festival</h1>
+
+
+            <nav class="navegation-principal">
+                <a href="#lineup">Line Up</a>
+                <a href="#galeria">Galería</a>
+                <a href="#boletos">Boletos</a>
+                <a href="https://calm-pika-98ed1d.netlify.app/" target="_blank">Mercancía</a>
+            </nav>
+        </div> 
+   </header> 
+
+   <div class="video">
+        <div class="overlay">
+            <div class="contenedor contenido-video">
+                <h2>Rock & EDM Festival</h2>
+                <p>Noviembre 2022, Buenos Aires, Argentina</p>
+            </div>
+        </div> <!--Fin de class overlay-->
+        <video autoplay muted loop>
+            <source src="video/concierto.mp4" type="video/mp4">
+            <source src="video/concierto.ogg" type="video/ogg">
+            <source src="video/concierto.webm" type="video/webm">
+        </video>
+   </div> <!--Fin de class video-->
+
+   <section class="contenedor sobre-festival">
+        <div class="imagen">
+            <picture>
+                <source srcset="build/img/imagen_vocalista.avif" type="image/avi">
+                <source srcset="build/img/imagen_vocalista.webp" type="image/webp">
+                <img loading="lazy" width="200" height="300" src="src/img/imagen_vocalista.jpg" alt="Imagen vocalista">
+            </picture>
+        </div> <!--Fin class imagen-->
+        <div class="contenido-festival">
+            <h2 class="reveal">Rock & EDM Festival</h2>
+            <p class="fecha">Noviembre 2022, Buenos Aires, Argentina</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adisicing elit. Dolor 
+            expedita nulla dignissimos repellendus corporis exepturi enim eum?
+            Tenetur rerum exepturi natus dicta ullam sit, fuga asperiores maxime
+            distinctio rem doloremque?</p>
+        </div> <!--Fin class imagen-->
+   </section>
+
+   <section class="ambientes">
+        <div class="seccion musica desplaza">
+            <div class="contenido-seccion">
+                <picture>
+                    <source srcset="build/img/festival.avif" type="image/avi">
+                    <source srcset="build/img/festival.webp" type="image/webp">
+                    <img loading="lazy" width="200" height="300" src="src/img/festival.jpg" alt="Imagen festival">
+                </picture> 
+                <div class="seccion-texto">
+                    <h3>La música está en nuestro ADN</h3>
+                    <p>2 días, 2 escenarios y más de 20 bandas de todo el mundo.</p>
+                </div>
+            </div>
+        </div>
+        <div class="seccion comida reveal">
+            <div class="contenido-seccion">
+                <picture>
+                    <source srcset="build/img/comida.avif" type="image/avi">
+                    <source srcset="build/img/comida.webp" type="image/webp">
+                    <img loading="lazy" width="200" height="300" src="comida.jpg" alt="Imagen comida">
+                </picture> 
+                <div class="seccion-texto">
+                    <h3>Food</h3>
+                    <p>Te traemos las propuestas gastronómicas de los chefs argentinos más reconocidos del mundo.</p>
+                </div>  
+            </div>
+        </div>
+
+        <div class="seccion espacio desplaza">
+            <div class="contenido-seccion">
+                <picture>
+                    <source srcset="build/img/parque.avif" type="image/avi">
+                    <source srcset="build/img/parque.webp" type="image/webp">
+                    <img loading="lazy" width="200" height="300" src="parque.jpg" alt="Imagen parque">
+                </picture> 
+                <div class="seccion-texto">
+                    <h3>Espacios verdes</h3>
+                    <p>Disfruta del día al aire libre, con buena música y gente con la mejor vibra.</p>
+                </div>  
+            </div>
+        </div>
+   </section>
+
+   <section id="lineup" class="lineup">
+        <h3>Line Up</h3>
+
+        <p class="dia">Viernes 21</p>
+
+        <div class="escenarios-contenedor contenedor">
+            <div class="escenario rock bg-amarillo">
+                <p class="nombre-escenario">Escenario Rock</p>
+                    <ul class="calendario">
+                        <li>
+                            24:00 - <span>Metalica</span>
+                        </li>
+                        <li>
+                            22:00 - <span>Pearl Jam</span>
+                        </li>
+                        <li>
+                            20:00 - <span>KoRn</span>
+                        </li>
+                        <li>
+                            19:00 - <span>Muse</span>
+                        </li>
+                        <li>
+                            18:00 - <span>Breaking Benjamin</span>
+                        </li>
+                        <li>
+                            17:00 - <span>30 Seconds to Mars</span>
+                        </li>
+                    </ul>
+            </div> <!--termina escenario-->
+
+            <div class="escenario edm bg-verde">
+                <p class="nombre-escenario">Escenario EDM</p>
+                    <ul class="calendario">
+                        <li>
+                            24:00 - <span>Deadmau5</span>
+                        </li>
+                        <li>
+                            22:00 - <span>Tiesto</span>
+                        </li>
+                        <li>
+                            20:00 - <span>Hardwell</span>
+                        </li>
+                        <li>
+                            19:00 - <span>Dash Berlin</span>
+                        </li>
+                        <li>
+                            18:00 - <span>Fedde Legrand</span>
+                        </li>
+                        <li>
+                            17:00 - <span>Audien</span>
+                        </li>
+                    </ul>
+            </div> <!--termina escenario-->
+
+        </div> <!--termina escenarios contenedor-->
+
+        <p class="dia">Sábado 22</p>
+
+        <div class="escenarios-contenedor contenedor">
+            <div class="escenario rock bg-verde">
+                <p class="nombre-escenario">Escenario Rock</p>
+                    <ul class="calendario">
+                        <li>
+                            24:00 - <span>Red Hot Chili Peppers</span>
+                        </li>
+                        <li>
+                            22:00 - <span>The Killers</span>
+                        </li>
+                        <li>
+                            20:00 - <span>Deftones</span>
+                        </li>
+                        <li>
+                            19:00 - <span>Limp Bizkit</span>
+                        </li>
+                        <li>
+                            18:00 - <span>Papa Roach</span>
+                        </li>
+                        <li>
+                            17:00 - <span>Lamb of God</span>
+                        </li>
+                    </ul>
+            </div> <!--termina escenario-->
+
+            <div class="escenario edm bg-amarillo">
+                <p class="nombre-escenario">Escenario EDM</p>
+                    <ul class="calendario">
+                        <li>
+                            24:00 - <span>Paul Van Dyk</span>
+                        </li>
+                        <li>
+                            22:00 - <span>Armin Van Buuren</span>
+                        </li>
+                        <li>
+                            20:00 - <span>Above & Beyond</span>
+                        </li>
+                        <li>
+                            19:00 - <span>Eric Prdyz</span>
+                        </li>
+                        <li>
+                            18:00 - <span>Ferry Corsten</span>
+                        </li>
+                        <li>
+                            17:00 - <span>Vini Vici</span>
+                        </li>
+                    </ul>
+            </div> <!--termina escenario-->
+        
+        </div> <!--termina escenarios contenedor-->
+    </section>
+
+    <section id="galeria" class="galeria contenedor">
+        <h3>Galería</h3>
+
+        <ul class="galeria-imagenes"></ul>
+    </section>
+
+    <section id="boletos" class="boletos bg-verde">
+        <h3>Boletos</h3>
+    
+        <div class="contenedor contenedor-boletos">
+            <div class="basico pase">
+                <p class="nombre-pase">Pase 1 Día</p>
+                <header class="pase-header">
+                    <p>Incluye</p>
+                </header>
+                <div class="pase-body">
+                    <ul>
+                        <li>Acceso a ambos escenarios</li>
+                        <li>Comida y Bebida</li>
+                    </ul>
+                </div> <!--Fin de pase body-->
+                <footer class="pase-footer">
+                    <p>$100</p>
+                </footer>
+            </div> <!--Fin clase basico-->
+            <div class="premium pase">
+                <p class="nombre-pase">Pase 2 Días</p>
+                <header class="pase-header">
+                    <p>Incluye</p>
+                </header>
+                <div class="pase-body">
+                    <ul>
+                        <li>Acceso a ambos escenarios</li>
+                        <li>Comida y Bebida</li>
+                        <li>Camisa de Evento</li>
+                        <li>Acceso VIP</li> 
+                    </ul>
+                </div> <!--Fin de pase body-->
+                <footer class="pase-footer">
+                    <p>$180</p>
+                </footer>
+            </div> <!--Fin de pase premium-->
+        </div> <!--Fin contenedor-boletos-->
+    </section>
+
+    <footer class="site-footer">
+        <p>Rock & EDM Festival. Todos los derechos reservados</p>
+    </footer>
+    
+    <script src="build/js/app.js"></script>
+</body>
+</html>
